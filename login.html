@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Sign Up in CTR Quartz</title>
+
+	<link rel="shortcut icon" type="image" href="images/log.png">
+
+	<link rel="stylesheet" href="login.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+	<script src="https://kit.fontawesome.com/dec09dc6e4.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+	
+
+	<section>
+		<div class="logo">
+			<img class="logos" src="images/log.png" alt="logo">
+		</div>
+	</section>
+
+
+
+	<section>
+		<div class="background">
+			<div class="back">
+				<div class="container">
+					<h1 class="label"> <br>Sign up</h1>
+					<form class="login_form" action="index.html" method="post" name="form"
+						onsubmit=" return validated()">
+						<div class="font">Username</div>
+						<input autocomplete="off" type="text" name="email">
+						<div id="email_error">Please fill up your Email or Phone number</div>
+						<div class="font font2">Create a Password</div>
+						<input type="password" name="password">
+						<div id="pass_error">Please fill up your Password</div>
+						<button onclick="checkers()" type="submit">Sign In</button>
+
+						<center> <a href="admin.html" class="fas fa-user-gear"><br><span>Admin</span></a></center>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+	<script src="js/login.js"></script>
+
+</body>
+
+</html>

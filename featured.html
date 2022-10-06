@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shop </title>
+    <link rel="shortcut icon" type="image" href="images/log.png">
+    <!-- owl carousel css file cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <script src="https://kit.fontawesome.com/dec09dc6e4.js" crossorigin="anonymous"></script>
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/featured.css">
+
+</head>
+
+<body>
+    <!-- header section starts  -->
+
+    <header>
+
+        
+        <div class="header-1">
+            <section>
+                <div class="logo">
+                   <img class="logos" src="images/log.png" alt="logo">
+                </div>
+            </section>
+            <div class="chanext">
+            <a href="#" class="logo"> <i class="fas fa-shopping-bag"></i> CTR quartZ </a>
+        </div>
+            <div class="form-container">
+                <form action="">
+                    <input type="search" placeholder="search products" id="search" />
+                    <label for="search" class="fas fa-search"></label>
+                </form>
+            </div>
+
+        </div>
+
+        <div class="header-2">
+
+            <div id="menu" class="fas fa-bars"></div>
+
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="arrival.html">arrival</a></li>
+                    <li><a class="active" href="featured.html">featured</a></li>
+                    <li><a href="gallery.html">gallery</a></li>
+                    <li><a href="deal.html">deal</a></li>
+                </ul>
+            </nav>
+
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="user.html" class="fas fa-user"></a>
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- header section ends -->
+
+
+
+
+
+    <!-- featured section starts  -->
+
+    <section class="feature" id="featured">
+
+        <h1 class="heading"> <span> featured product </span> </h1>
+
+        <div class="row">
+
+            <div class="image-container">
+
+                <div class="big-image">
+                    <img src="images/bb.jpg" alt="">
+                </div>
+
+                <div class="small-image">
+                    <img class="image-active" src="images/bb.jpg" alt="">
+                    <img src="images/cc.jfif" alt="">
+                    <img src="images/dd.jpg" alt="">
+                    <img src="images/ee.jfif" alt="">
+                </div>
+
+            </div>
+
+            <div class="content">
+
+                <h3>smart watches</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span>(499+) reviews</span>
+                </div>
+                <p>These types of watches for men have stood the test of time owing to their superior quality.</p>
+                <strong class="price">₱999 <span>₱1500</span> </strong>
+                <a onclick="checker()" href="buynow.html"><button class="btn">buy now</button></a>
+
+            </div>
+
+        </div>
+
+
+
+        
+        
+    </section>
+
+    
+
+    <!-- featured section ends -->
+
+
+
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <a href="#" class="logo"> <i class="fas fa-shopping-bag"></i> CTR quartZ </a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique expedita molestiae distinctio
+                    facere beatae velit, maiores ullam molestias necessitatibus sapiente.</p>
+            </div>
+
+            <div class="box">
+                <h3>links</h3>
+                <a href="index.html">home</a>
+                <a href="arrival.html">arrival</a>
+                <a href="featured.html">featured</a>
+                <a href="gallery.html">gallery</a>
+                <a href="deal.html">deal</a>
+            </div>
+
+            <div class="box">
+                <h3>contact us</h3>
+                <p> <i class="fas fa-home"></i>
+                    talamban nasipit road,
+                    samjung building
+                </p>
+                <p> <i class="fas fa-phone"></i>
+                    +910000000
+                </p>
+                <p> <i class="fas fa-globe"></i>
+                    CTRQuartz_official.@Gmail.Com
+                </p>
+            </div>
+
+        </div>
+        <h1 class="credit"> created by <span>CTR quartZ Company</span> | all rights reserved. </h1>
+
+    </section>
+
+    <!-- footer section ends -->
+
+    <!-- jquery cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- owl carousel js file cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="js/js.js"></script>
+    <script>
+        function checker() {
+		var result = confirm('\n\n Do you want to buy this watch?\n');
+		if (result == false){
+			event.preventDefault();
+		}
+		
+	}
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="shortcut icon" type="image" href="images/log.png">
+    <link rel="stylesheet" href="css/try.css">
+</head>
+
+<body>
+
+    <form id="form">
+        <center>
+            <img src="images/admin.jpg" alt="admin">
+            <div class="title">
+                Admin
+            </div><br>
+            <input type="text" id="username" required placeholder="Username">
+            <br>
+            <br>
+            <input type="text" id="password" required placeholder="Password">
+            <br><br>
+           
+            <a ><button onclick="validation()" href="" id="login">Log in</button></a>
+        </center>
+
+    </form>
+
+    <script>
+        function validation() {
+            var username = 'chanext123'
+            var password = '123456'
+
+            var userName = document.getElementById('username').value;
+            var passWord = document.getElementById('password').value;
+
+            if ((username == userName) && (password == passWord)) {
+                document.getElementById('form').setAttribute("action","dashboard.html");
+
+            }
+            else {
+                alert("\nEnter the Correct Details")
+
+            }
+        }
+    </script>
+
+</body>
+
+</html>
